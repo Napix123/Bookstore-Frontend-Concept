@@ -1,0 +1,206 @@
+/* Navigacija */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 20vh;
+}
+
+section #navigacija {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px #2596be;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+
+section #navigacija .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+section #navigacija ul {
+    list-style-type: none; 
+}
+
+section #navigacija li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section #navigacija li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section #navigacija li:hover {
+    background-color: antiquewhite;
+}
+
+section #navigacija li a:hover {
+    color: darkblue;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .glavni_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .glavni_footer .tag {
+    margin: 10px 0;
+}
+
+footer .glavni_footer .tag img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+footer .glavni_footer .tag h1 {
+    font-size: 30px;
+    margin: 25px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag i {
+    margin-right: 15px;
+}
+
+footer .glavni_footer .tag .linkovi {
+    margin: 0 10px; 
+}
+
+
+/* Galerija */
+
+.galerija {
+    width: 100%;
+    height: 100vh;
+    padding: 65px 0;
+}
+
+.galerija h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    font-size: 45px;
+}
+
+.galerija .kutija {
+    height: 60vh;
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    overflow: hidden;
+    overflow-x: scroll;
+}
+
+.galerija .kutija .kartica {
+    height: 420px;
+    width: 250px;
+    text-align: center;
+    padding: 6px;
+    border: 1px solid #919191;
+    margin: auto 20px;
+}
+
+.galerija .kutija .kartica:hover {
+    box-shadow: 0 0 5px #089da1;
+}
+
+.galerija .kutija .kartica .slika img {
+    width: 150px;
+}
+
+.galerija .kutija .kartica .tag h4 {
+    margin: 2px;
+}
+
+.galerija .kutija .kartica .tag .autor {
+    color: #64309c;
+}
+
+.galerija .kutija .kartica .tag .kategorije {
+    color: #089da1;
+    margin-top: 5px;
+}
+
+.galerija .kutija .kartica .tag .cena {
+    margin-top: 4px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.galerija .kutija .kartica .tag .cena sub {
+    font-weight: 100;
+    padding: 0 5px;
+}
+
+.galerija .kutija .kartica .tag .dugme {
+    padding: 5px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: black;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset  0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    background: #089da1;
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1200px) {
+    .galerija {
+        max-width: 800px;
+    }
+
+    footer {
+        max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .galerija {
+        max-width: 640px;
+    }
+
+    footer {
+        max-width: 640px;
+    }
+}

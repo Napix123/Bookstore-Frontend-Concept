@@ -1,0 +1,186 @@
+/* Navigacija */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 15vh;
+}
+
+section #navigacija {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px #2596be;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+
+section #navigacija .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+section #navigacija ul {
+    list-style-type: none; 
+}
+
+
+section #navigacija li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section #navigacija li:hover {
+    background-color: antiquewhite;
+}
+
+section #navigacija li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section #navigacija li a:hover {
+    color: darkblue;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+    margin-top: 50px;
+}
+
+footer .glavni_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .glavni_footer .tag {
+    margin: 10px 0;
+}
+
+footer .glavni_footer .tag img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+footer .glavni_footer .tag h1 {
+    font-size: 30px;
+    margin: 25px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag i {
+    margin-right: 15px;
+}
+
+footer .glavni_footer .tag .linkovi {
+    margin: 0 10px; 
+}
+
+
+/* Recenzije */
+.recenzije {
+    width: 100%;
+    height: auto;
+}
+
+.recenzije h1 {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 50px;
+}
+
+.recenzije .rec_kutija {
+    width: 95%;
+    height: 35vh;
+    margin: 12px auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.recenzije .rec_kutija .rec_kartica {
+    width: 400px;
+    height: 320px;
+    box-shadow: 0 0 8px #089da1;
+    padding: 15px;
+    margin: 0 11px;
+}
+
+.recenzije .rec_kutija .rec_kartica i {
+    float: right;
+    position: relative;
+    font-size: 100px;
+    bottom: 20px;
+    color: #eaeaea;
+}
+
+.recenzije .rec_kutija .rec_kartica .kartica_vrh img {
+    width: 80px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.recenzije .rec_kutija .rec_kartica .kartica p {
+    margin: 10px 0 10px 0;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.recenzije .rec_kutija .rec_kartica .kartica .rec_ikone i {
+    font-size: 15px;
+    float: left;
+    margin-top: 20px;
+    color: #089da1;
+    padding: 0 2px;
+}
+
+
+@media screen and (max-width: 1200px) {
+    .recenzije {
+        max-width: 800px;
+    }
+
+    #navigacija {
+        max-width: 800px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .recenzije {
+        max-width: 640px;
+    }
+
+    #navigacija {
+        max-width: 640px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}

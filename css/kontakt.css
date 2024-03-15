@@ -1,0 +1,195 @@
+/* Navigacija */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 20vh;
+}
+
+section #navigacija {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px #2596be;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+
+section #navigacija .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+section #navigacija ul {
+    list-style-type: none; 
+}
+
+section #navigacija li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section #navigacija li:hover {
+    background-color: antiquewhite;
+}
+
+section #navigacija li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section #navigacija li a:hover {
+    color: darkblue;
+}
+
+/* Kontakt */
+form {
+    height: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    height: 300px;
+    width: 500px;
+    border-radius: 5px;
+    border: 5px solid #089da1;
+    margin-top: 100px;
+    float: left;
+}
+
+fieldset input {
+    background-color: antiquewhite;
+    color: #252525;
+    border: 1px solid black;
+}
+
+p {
+    display: inline-block;
+    margin-left: 5px;
+    height: 20px;
+    font-size: 20px;
+}
+
+p:first-of-type {
+    margin-top: 120px;
+}
+
+p:nth-of-type(2) {
+    margin-top: 0;
+}
+
+fieldset button {
+    background-color: antiquewhite;
+    color: #252525;
+    border: 1px solid black;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+fieldset button,
+fieldset input {
+    width: 600px;
+}
+
+#reset {
+    margin-top: 30px;
+}
+
+
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+    margin-top: 350px;
+}
+
+footer .glavni_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .glavni_footer .tag {
+    margin: 10px 0;
+}
+
+footer .glavni_footer .tag img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+footer .glavni_footer .tag h1 {
+    font-size: 30px;
+    margin: 25px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag i {
+    margin-right: 15px;
+}
+
+footer .glavni_footer .tag .linkovi {
+    margin: 0 10px; 
+}
+
+
+@media screen and (max-width: 1200px) {
+    footer {
+       max-width: 800px;
+    }
+    fieldset {
+        max-width: 150px;
+    }
+
+    #navigacija {
+       max-width: 800px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+     footer {
+        max-width: 640px;
+     }
+     fieldset {
+        max-width: 50px;
+     }
+
+     #navigacija {
+        max-width: 640px;
+     }
+}
+
+
+@media screen and (max-width: 640px) {
+    footer {
+       max-width: 640px;
+    }
+    fieldset {
+       max-width: 50px;
+    }
+
+    #navigacija {
+       max-width: 640px;
+    }
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/galerija.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../localStorage.js"></script>
+    <title>Galerija</title>
+</head>
+<body>
+     <!-- Navigacija -->
+     <section>
+        <nav id="navigacija">
+            <div class="logo">
+                <img src="../images/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg" alt="Logo">
+            </div>
+    
+            <ul>
+                <li><a href="../html/index.html" onclick="LinkClicked('Pocetna strana')">Pocetna strana</a></li>
+                <li><a href="../html/knjige.html" onclick="LinkClicked('Knjige')">Knjige</a></li>
+                <li><a href="../html/galerija.html" onclick="LinkClicked('Galerija')">Galerija</a></li>
+                <li><a href="../html/recenzije.html" onclick="LinkClicked('Recenzije')">Recenzije</a></li>
+                <li><a href="../html/kontakt.html" onclick="LinkClicked('Kontakt')">Kontakt</a></li>
+            </ul>
+    
+            </nav>
+    
+        </section>
+
+        <!-- Prikazivanje galerije -->
+
+        <div class="galerija">
+            <h1>IZABRANE KNJIGE</h1>
+
+            <div class="kutija">
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/Harry-Potter-Book-Covers-Chamber-of-Secrets-us-1-682x1024.png">
+                    </div>
+
+                    <div class="tag">
+                        <h4>Harry Potter and the Chamber of Secrets</h4>
+                        <p class="autor">JK Rowling</p>
+                        <div class="kategorije">Fantasy, Mystery, Adventure</div>
+                        <p class="cena">2000 din.<sub><del>2500</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/1c124d975e59a5d7b1a643ce88a12028.png">
+                    </div>
+
+                    <div class="tag">
+                        <h4>Harry Potter and the Deathly Hallows</h4>
+                        <p class="autor">JK Rowling</p>
+                        <div class="kategorije">Fantasy, Mystery, Adventure</div>
+                        <p class="cena">2000 din.<sub><del>2500</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/gameofthrones.jpg">
+                    </div>
+
+                    <div class="tag">
+                        <h4>Fire and Blood</h4>
+                        <p class="autor">George R.R. Martin</p>
+                        <div class="kategorije">Fantasy, Adventure</div>
+                        <p class="cena">1800 din.<sub><del>2300</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/51HW0wQziGL.jpg">
+                    </div>
+
+                    <div class="tag">
+                        <h4>Fullmetal Alchemist Vol.1</h4>
+                        <p class="autor">Hiromu Arukawa</p>
+                        <div class="kategorije">Fantasy, Manga</div>
+                        <p class="cena">1000 din.<sub><del>1500</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/48ea233df3de3780fb42978dd23b9aa3.png">
+                    </div>
+
+                    <div class="tag">
+                        <h4>Attack on Titan Vol.23</h4>
+                        <p class="autor">Hajime Isayama</p>
+                        <div class="kategorije">Fantasy, Action, Manga</div>
+                        <p class="cena">1000 din.<sub><del>1500</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/gatsby-original2.jpg">
+                    </div>
+
+                    <div class="tag">
+                        <h4>The Great Gatsby</h4>
+                        <p class="autor">F.Scott Fitzgerald</p>
+                        <div class="kategorije"> Mystery</div>
+                        <p class="cena">1200 din.<sub><del>1500</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/narnia.jpg">
+                    </div>
+
+                    <div class="tag">
+                        <h4>The Chronicles of Narnia</h4>
+                        <p class="autor">CS Lewis</p>
+                        <div class="kategorije">Fantasy</div>
+                        <p class="cena">1800 din.<sub><del>2100</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+                <div class="kartica">
+                    <div class="slika">
+                        <img src="../images/the goldfinch.jpg">
+
+                    <div class="tag">
+                        <h4>The Goldfinch</h4>
+                        <p class="autor">Donna Tartt</p>
+                        <div class="kategorije">Thriller</div>
+                        <p class="cena">1700 din.<sub><del>2000</del></sub></p>
+                        <a href="#" class="dugme">Naucite jos</a>
+                    </div>
+                </div>
+
+            </div>
+            </div>
+        </div>
+
+
+
+        <!-- Footer -->
+    <footer>
+        <div class="glavni_footer">
+            <div class="tag">
+                <img id="logo" src="../images/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg">
+            </div>
+
+            <div class="tag">
+                <ul id="link-container" onload="refreshUL()">
+                <li id="link1"></li>
+                <li id="link2"></li>
+                <li id="link3"></li>
+                </ul>
+            </div>
+
+            <div class="tag">
+                <h1>Kontakt informacije</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+38160 547 321</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>provincija@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Zapratite nas</h1>
+                <div class="linkovi">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/recenzije.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="../localStorage.js"></script>
+    <title>Recenzije</title>
+</head>
+<body>
+    <!-- Navigacija -->
+    <section>
+        <nav id="navigacija">
+            <div class="logo">
+                <img src="../images/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg" alt="Logo">
+            </div>
+    
+            <ul>
+                <li><a href="../html/index.html" onclick="LinkClicked('Pocetna strana')">Pocetna strana</a></li>
+                <li><a href="../html/knjige.html" onclick="LinkClicked('Knjige')">Knjige</a></li>
+                <li><a href="../html/galerija.html" onclick="LinkClicked('Galerija')">Galerija</a></li>
+                <li><a href="../html/recenzije.html" onclick="LinkClicked('Recenzije')">Recenzije</a></li>
+                <li><a href="../html/kontakt.html" onclick="LinkClicked('Kontakt')">Kontakt</a></li>    
+            </ul>
+    
+            </nav>
+    
+        </section>
+
+        <!-- Recenzije -->
+        <div class="recenzije">
+            <h1>RECENZIJE</h1>
+
+            <div class="rec_kutija">
+                <div class="rec_kartica">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="kartica_vrh">
+                        <img src="../images/review_1.png">
+                    </div>
+                    <div class="kartica">
+                        <h2>Marko Marković</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Vitae sequi voluptas corrupti 
+                            similique voluptatem at sint dolores nam nobis, 
+                            hic illum minus perferendis delectus, 
+                            molestiae sapiente voluptatibus nulla corporis accusamus.
+                        </p>
+                        <div class="rec_ikone">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec_kutija">
+                <div class="rec_kartica">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="kartica_vrh">
+                        <img src="../images/review_2.png">
+                    </div>
+                    <div class="kartica">
+                        <h2>Nataša Petrović</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Vitae sequi voluptas corrupti 
+                            similique voluptatem at sint dolores nam nobis, 
+                            hic illum minus perferendis delectus, 
+                            molestiae sapiente voluptatibus nulla corporis accusamus.
+                        </p>
+                        <div class="rec_ikone">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="rec_kutija">
+                <div class="rec_kartica">
+                    <i class="fa-solid fa-quote-right"></i>
+                    <div class="kartica_vrh">
+                        <img src="../images/review_4.png">
+                    </div>
+                    <div class="kartica">
+                        <h2>Ana Petrović</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur, 
+                            adipisicing elit. Vitae sequi voluptas corrupti 
+                            similique voluptatem at sint dolores nam nobis, 
+                            hic illum minus perferendis delectus, 
+                            molestiae sapiente voluptatibus nulla corporis accusamus.
+                        </p>
+                        <div class="rec_ikone">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Footer -->
+    <footer>
+        <div class="glavni_footer">
+            <div class="tag">
+                <img src="../images/book-read-library-study-line-icon-illustration-logo-template-suitable-for-many-purposes-free-vector.jpg">
+            </div>
+
+            <div class="tag">
+                <ul id="link-container" onload="refreshUL()">
+                <li id="link1"></li>
+                <li id="link2"></li>
+                <li id="link3"></li>
+                </ul>
+            </div>
+
+            <div class="tag">
+                <h1>Kontakt informacije</h1>
+                <a href="#"><i class="fa-solid fa-phone"></i>+38160 547 321</a>
+                <a href="#"><i class="fa-solid fa-envelope"></i>provincija@gmail.com</a>
+            </div>
+
+            <div class="tag">
+                <h1>Zapratite nas</h1>
+                <div class="linkovi">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                </div>
+            </div>
+        </div>
+    </footer>    
+</body>
+</html>

@@ -1,0 +1,198 @@
+/* Navigacija */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+section {
+    width: 100%;
+    height: 20vh;
+}
+
+section #navigacija {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #fff;
+    box-shadow: 0 0 10px #2596be;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+}
+
+
+section #navigacija .logo img {
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+section #navigacija ul {
+    list-style-type: none; 
+}
+
+section #navigacija li {
+    display: inline-block;
+    padding: 0 10px;
+}
+
+section #navigacija li:hover {
+    background-color: antiquewhite;
+}
+
+section #navigacija li a {
+    text-decoration: none;
+    color: #000;
+}
+
+section #navigacija li a:hover {
+    color: darkblue;
+}
+
+/* Footer */
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .glavni_footer {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+footer .glavni_footer .tag {
+    margin: 10px 0;
+}
+
+footer .glavni_footer .tag img {
+    width: 100px;
+    margin-bottom: 15px;
+}
+
+footer .glavni_footer .tag h1 {
+    font-size: 30px;
+    margin: 25px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag a {
+    display: block;
+    text-decoration: none;
+    margin: 10px 0;
+    color: black;
+}
+
+footer .glavni_footer .tag i {
+    margin-right: 15px;
+}
+
+footer .glavni_footer .tag .linkovi {
+    margin: 0 10px; 
+}
+
+/* Knjige */
+
+.knjige {
+    width: 100%;
+    height: 100vh;
+    margin-bottom: auto;
+}
+
+.knjige h1 {
+    font-size: 45px;
+    text-align: center;
+    margin-bottom: auto;
+}
+
+.knjige .knjige_kutija {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 25px 0;
+    width: 95%;
+}
+
+.knjige .knjige_kutija .knjige_kartica {
+    text-align: center;
+    border: 1px solid #089da1;
+    margin: auto 20px;
+    width: 250px;
+    height: 345px;
+    padding: 5px;
+}
+
+.knjige .knjige_kutija .knjige_kartica:hover {
+    box-shadow: 0 0 5px #089da1;
+}
+
+.knjige .knjige_kutija .knjige_kartica .knjige_slika {
+    width: 150px;
+    height: 220px;
+    margin: 0 auto;
+    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.knjige .knjige_kutija .knjige_kartica .knjige_slika img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.2s;
+}
+
+.knjige .knjige_kutija .knjige_kartica:hover .knjige_slika img {
+    transform: scale(1.1);
+}
+
+.knjige .knjige_kutija .knjige_kartica .knjige_tag p {
+    font-size: 20px;
+    margin: 7px 0;
+}
+
+.knjige .knjige_kutija .knjige_kartica .knjige_tag .knjige_ikone {
+    color: #089da1;
+    margin-bottom: 15px;
+}
+
+.knjige .knjige_kutija .knjige_kartica .knjige_tag .knjige_dugme {
+    padding: 7px 20px;
+    border: 2px solid #089da1;
+    text-decoration: none;
+    color: black;
+}
+
+@media screen and (max-width: 1200px) {
+    .knjige {
+        max-width: 800px;
+    }
+
+    #navigacija {
+        max-width: 800px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .knjige {
+        max-width: 640px;
+    }
+
+    #navigacija {
+        max-width: 640px;
+    }
+
+    footer {
+        padding: 50px;
+    }
+}
